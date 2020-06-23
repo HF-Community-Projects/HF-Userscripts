@@ -1,8 +1,7 @@
 # Hackforums Slots Bot 🤖🎲
 This is a very simple bot that will keep placing credit bets until you hit either your "Safety Switch". This bot is really only good for farming the Dice award and nothing else.
 
-
-## How To Use / Tampermonkey 🤖🐵
+## Tampermonkey 🤖🐵
 1) Install <a href="https://www.tampermonkey.net/">Tampermonkey</a>
 2) Click <a href="https://openuserjs.org/install/Joel/Hackforums_Slot_Bot.user.js">Here</a>
 3) Make sure the script is enabled and so is Tampermonkey
@@ -19,6 +18,7 @@ The bot will now run until it hits your safety switch.
 
 > Tampermonkey Script is 500ms Slower due to execution time.
 
-I also don't know if this bot is allowed or not. So <b>USE AT YOUR OWN RISK!</b>
+THIS BOT IS ALLOWED :)
+<img src="https://i.gyazo.com/152594141e9a7e77576e248a63268057.png">
 
 Author: <a href="https://hackforums.net/member.php?action=profile&uid=3790579" target="_blank">Joel (Me)</a>
