@@ -10,5 +10,5 @@ This is temporary and a directory of userscripts is planned to be added to an au
 2. Include an update to the README.md with an entry for the new userscript.
 3. Include a changelog entry in the userscript block header displaying the version and changes you have made
 4. Create a pull request from a feature branch (ie. feature/hf-alwaysquote) to develop.
-5. Once the required number of approvals have been met and all comments have been addressed, the PR can be merged.
+5. Once the required number of approvals have been met and all comments have been addressed, the PR can be merged and the feature branch can be deleted.
 6. Create another PR from develop to master, meet required approvals, and merge when ready.
