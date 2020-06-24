@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         HF Anti-Caps Lock
 // @namespace    http://tampermonkey.net/
-// @version      0.1
+// @version      1.0.0
 // @description  Automatically convert the words in caps lock in thread titles to Title Case.
 // @author       James
 // @include      https://hackforums.net/search.php?*
@@ -12,7 +12,7 @@
 // ==/UserScript==
 //
 // ------- CHANGE LOG -------
-// Initial release.
+// version 1.0.0: Initial Release
 // ---------------------------
 
 (function() {
