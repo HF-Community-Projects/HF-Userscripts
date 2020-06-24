@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         HF Anti-Caps Lock
-// @namespace    http://tampermonkey.net/
+// @namespace    https://github.com/HF-Community-Projects/HF-Userscripts
 // @version      1.0.0
 // @description  Automatically convert the words in caps lock in thread titles to Title Case.
 // @author       James
@@ -9,6 +9,7 @@
 // @updateURL    https://github.com/HF-Community-Projects/HF-Userscripts/raw/master/HF-Anti-Caps-Lock/HF-Anti-Caps-Lock.user.js
 // @downloadURL  https://github.com/HF-Community-Projects/HF-Userscripts/raw/master/HF-Anti-Caps-Lock/HF-Anti-Caps-Lock.user.js
 // @grant        none
+// @copyright    2020+
 // ==/UserScript==
 //
 // ------- CHANGE LOG -------
