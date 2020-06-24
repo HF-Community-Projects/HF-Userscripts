@@ -6,6 +6,7 @@ This is a very simple script that adds a small label under your level to tell yo
 2) Click <a href="https://openuserjs.org/install/Joel/Hack%C3%BAman_Heal_Predictor.user.js">Here</a>
 3) Make sure the script is enabled and so is Tampermonkey
 4) Proceed to the <a href="https://hackforums.net/hackuman.php">Slots</a> and you will see the label under your level.
+Notes: There is a variable called "smartHeal" on Line 19 of the Script. You can change this from true to false to change how the price is Calculated. Explanation is commented in the code!
 
 ## Screenshots 
 <img src="https://i.ibb.co/ZHhY9mj/Cost-Before.png"> <img src="https://i.ibb.co/NCpYbXS/Cost-After-Lvl-11.png">
