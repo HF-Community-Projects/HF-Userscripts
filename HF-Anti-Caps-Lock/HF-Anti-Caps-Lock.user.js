@@ -6,8 +6,8 @@
 // @author       James
 // @include      https://hackforums.net/search.php?*
 // @include      https://hackforums.net/forumdisplay.php?*
-// @updateURL    
-// @downloadURL  
+// @updateURL    https://github.com/HF-Community-Projects/HF-Userscripts/raw/master/HF-Anti-Caps-Lock/HF-Anti-Caps-Lock.user.js
+// @downloadURL  https://github.com/HF-Community-Projects/HF-Userscripts/raw/master/HF-Anti-Caps-Lock/HF-Anti-Caps-Lock.user.js
 // @grant        none
 // ==/UserScript==
 //
