@@ -4,7 +4,7 @@
 // @version      1.0.0
 // @description  Shows you the price to fully heal your Hackúman.
 // @author       Joel (UID: 3790579)
-// @match        https://hackforums.net/hackuman.php
+// @match        https://hackforums.net/hackuman.php*
 // @updateURL    https://github.com/HF-Community-Projects/HF-Userscripts/raw/master/HF-Hackuman-HP-Predictor/HF-Hackuman-HP-Predictor.user.js
 // @downloadURL  https://github.com/HF-Community-Projects/HF-Userscripts/raw/master/HF-Hackuman-HP-Predictor/HF-Hackuman-HP-Predictor.user.js
 // @grant        none
