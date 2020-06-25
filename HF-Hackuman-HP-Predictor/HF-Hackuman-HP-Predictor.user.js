@@ -1,15 +1,19 @@
 // ==UserScript==
-// @name Hackúman Heal Predictor
-// @description Tells you how many bytes you need to fully heal your Hackúman.
-// @license MIT
-// @match https://hackforums.net/hackuman.php
-// @icon https://i.ibb.co/LrYmmtD/4-normal-improved-5.png
-// @supportURL https://hackforums.net/member.php?action=profile&uid=3790579
-// @contributionURL 
-// @version 0.1
-// @updateURL 
-// @author Joel (UID: 3790579)
+// @name         Hackúman Heal Predictor
+// @namespace    https://github.com/HF-Community-Projects/HF-Userscripts
+// @version      1.0.0
+// @description  Shows you the price to fully heal your Hackúman.
+// @author       Joel (UID: 3790579)
+// @match        https://hackforums.net/hackuman.php
+// @updateURL    https://github.com/HF-Community-Projects/HF-Userscripts/raw/master/HF-Hackuman-HP-Predictor/HF-Hackuman-HP-Predictor.user.js
+// @downloadURL  https://github.com/HF-Community-Projects/HF-Userscripts/raw/master/HF-Hackuman-HP-Predictor/HF-Hackuman-HP-Predictor.user.js
+// @grant        none
+// @copyright    2020+
 // ==/UserScript==
+//
+// ------- CHANGE LOG -------
+// version 1.0.0: Initial Release
+// ---------------------------
 
 (function () {
     'use strict';
@@ -66,7 +70,6 @@
 
         var hackuman = new HackumanStats(parseInt(currentHealth.trim()), parseInt(maximumHealth.trim()), level.trim(), cost, healAmnt);
         hackumans.push(hackuman);
-        console.log(hackumans);
     }
 
     function GrabHackumen() {
