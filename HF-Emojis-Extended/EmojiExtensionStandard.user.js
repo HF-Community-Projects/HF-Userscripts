@@ -55,8 +55,10 @@
 
             if (document.title.includes("Post Reply")) {
                 document.getElementsByClassName("trow1")[2].appendChild(emojiElement);
-            } else {
+            } else if (document.title.includes("New Thread")) {
                 document.getElementsByClassName("trow1")[4].appendChild(emojiElement);
+            } else {
+                document.getElementsByClassName("trow1")[7].appendChild(emojiElement);
             }
         })
     }
