@@ -64,7 +64,12 @@
             } else if (document.title.includes("New Thread")) {
                 document.getElementsByClassName("trow1")[4].appendChild(emojiElement);
             } else {
-                document.getElementsByClassName("trow1")[7].appendChild(emojiElement);
+                let threadOrReply = document.querySelector("#editpost > table > tbody > tr:nth-child(8) > td.trow1.mobile-remove > strong");
+                if (threadOrReply != null) {
+                    document.getElementsByClassName("trow1")[4].appendChild(emojiElement);
+                } else {
+                    document.getElementsByClassName("trow1")[7].appendChild(emojiElement);
+                }
             }
         })
     }
