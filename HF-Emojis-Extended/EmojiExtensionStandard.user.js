@@ -1,11 +1,12 @@
 // ==UserScript==
-// @name         HackForum's Smilies Extended
+// @name         HackForum's Smilies Extended [Standard]
 // @namespace    https://github.com/HF-Community-Projects/HF-Userscripts
 // @version      1.0.0
 // @description  Extends what Emojis you have access too.
 // @author       Joel (UID: 3790579)
 // @match        https://hackforums.net/newthread.php*
 // @match        https://hackforums.net/newreply.php*
+// @match        https://hackforums.net/editpost.php*
 // @updateURL    https://github.com/HF-Community-Projects/HF-Userscripts/raw/master/HF-Emojis-Extended/EmojiExtensionStandard.user.js
 // @downloadURL  https://github.com/HF-Community-Projects/HF-Userscripts/raw/master/HF-Emojis-Extended/EmojiExtensionStandard.user.js
 // @grant        none
