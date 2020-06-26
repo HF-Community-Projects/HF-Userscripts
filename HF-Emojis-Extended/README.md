@@ -1,5 +1,5 @@
 # Hackforum's Emoji Extension 😂🔥🙏
-This script is great because it allows you to extend the limited amount of Emojis that Hackforums uses.
+This script allows you to access a wider range of Emotes/Emojis. They will be added to the Emoji Hotbar when you are making a thread/replying to one.
 
 ## Whats Included?
 There are 3 script editions to this **[BetterTTV]**, **[StandardEmoji]**</u> & **[Combined]**.
