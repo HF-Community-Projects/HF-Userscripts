@@ -1,14 +1,10 @@
 # Hackforum's Emoji Extension 😂🔥🙏
-This script allows you to access a wider range of Emotes/Emojis. They will be added to the Emoji Hotbar when you are making a thread/replying to one.
+This script allows you to access a wider range of Emotes/Emojis. They will be added to the Emoji Hotbar when you are making a thread/messaging/posting etc...
 
 ## Whats Included?
-There are 3 script editions to this **[BetterTTV]**, **[StandardEmoji]**</u> & **[Combined]**.
+There are currently [2] Packs currently added to this extension. [BetterTTV Emotes] & [Standard Emojis]
 
-**BetterTTV** - Better Twitch.tv Emotes.
-
-**StandardEmoji** - Standard Emojis you would see on most Social Media Platforms.
-
-**Combined**- Both of the above packs combined and included in one script.
+You select these packs by Editing line 27. You set the variable to either 0, 1 or 2. [0 = Both Packs, 1 = Emojie Pack, 2 = Emote Pack]
 
 <b>BetterTTV Emotes</b><br>
 <img src="https://cdn.betterttv.net/emote/56cb56f5500cb4cf51e25b90/1x"><img src="https://cdn.betterttv.net/emote/5a6edb51f730010d194bdd46/1x"><img src="https://cdn.betterttv.net/emote/5a16ddca8c22a247ead62ceb/1x"><img src="https://cdn.betterttv.net/emote/5b1740221c5a6065a7bad4b5/1x"><br>
@@ -19,14 +15,15 @@ There are 3 script editions to this **[BetterTTV]**, **[StandardEmoji]**</u> & *
 ❤ 🔥 😂 🥰 <br>
 🥺 😍 👏 🙏
  
-<img src="https://i.imgur.com/qR1GrTB.png">
+<img src="https://i.imgur.com/H6M0RoR.png">
 
 ## Future Plans/Fixes
-- Fix the Sizing issue for BTTV Emotes on the Smiley Hotbar
 - Add a lot more Emojis (Need to work on a Page System first.)
+- Adding a Visible Option for setting which Emojis Pack you want to use.
 - Any other suggestions/requested emojis <a href="https://hackforums.net/private.php?action=send&uid=3790579&subject=Emoji%20Suggestion">PM</a> me! 
 
 ## Credits 
 Author: <a href="https://hackforums.net/member.php?action=profile&uid=3790579" target="_blank">Joel</a><br>
+<a href="https://hackforums.net/member.php?action=profile&uid=1306528">For pushing me to fix more of my code.</a>
 <a href="https://emojipedia.org/">EmojiPedia</a><br>
 <a href="https://betterttv.com/">Better Twitch TV</a>

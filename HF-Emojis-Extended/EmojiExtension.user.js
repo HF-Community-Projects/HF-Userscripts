@@ -1,14 +1,15 @@
 // ==UserScript==
-// @name         HackForum's Smilies Extended [Combined]
+// @name         HackForum's Smilies Extended
 // @namespace    https://github.com/HF-Community-Projects/HF-Userscripts
 // @version      1.0.0
-// @description  Extends what Emojis you have access too.
+// @description  Extends what Emojis you can use.
 // @author       Joel (UID: 3790579)
 // @match        https://hackforums.net/newthread.php*
 // @match        https://hackforums.net/newreply.php*
 // @match        https://hackforums.net/editpost.php*
-// @updateURL    https://github.com/HF-Community-Projects/HF-Userscripts/raw/master/HF-Emojis-Extended/EmojiExtensionCombined.user.js
-// @downloadURL  https://github.com/HF-Community-Projects/HF-Userscripts/raw/master/HF-Emojis-Extended/EmojiExtensionCombined.user.js
+// @match        https://hackforums.net/private.php*
+// @updateURL    https://github.com/HF-Community-Projects/HF-Userscripts/raw/master/HF-Emojis-Extended/EmojiExtension.user.js
+// @downloadURL  https://github.com/HF-Community-Projects/HF-Userscripts/raw/master/HF-Emojis-Extended/EmojiExtension.user.js
 // @grant        none
 // @copyright    2020+
 // ==/UserScript==
@@ -23,6 +24,8 @@
     // Vars
     var emojiList = [];
     var customEmojiList = [];
+    var emojiPack = 0;
+    // 0 = Both Packs, 1 = Smilies Only, 2 = Better Twitch.tv Emotes
 
     // Objects
     function EmojiObject(emoji, title) {
@@ -31,9 +34,8 @@
         this.style = "margin: 5px; font-size: 18px; flex: 1 0 calc(25% - 10px); cursor: pointer;";
     }
 
-    function CustomEmojiObject(displaySrc, realSrc, title) {
-        this.displaySrc = displaySrc;
-        this.realSrc = realSrc;
+    function CustomEmojiObject(imgSrc, title) {
+        this.imgSrc = imgSrc;
         this.title = title;
         this.style = "margin: 5px; font-size: 18px; flex: 1 0 calc(25% - 10px); cursor: pointer;";
     }
@@ -61,10 +63,15 @@
                 MyBBEditor.insertText(`${emoji.emoji}`)
             }
 
+            // This abomination handles different pages
+            // Currently Supported: New Thread, New Post, Editing a Thread, Editing a Post,
+            // Replying to a PM, Creating a PM
             if (document.title.includes("Post Reply")) {
                 document.getElementsByClassName("trow1")[2].appendChild(emojiElement);
             } else if (document.title.includes("New Thread")) {
                 document.getElementsByClassName("trow1")[4].appendChild(emojiElement);
+            } else if (document.title.includes("Compose a Private Message")) {
+                document.getElementsByClassName("trow1")[31].appendChild(emojiElement);
             } else {
                 let threadOrReply = document.querySelector("#editpost > table > tbody > tr:nth-child(8) > td.trow1.mobile-remove > strong");
                 if (threadOrReply != null) {
@@ -78,6 +85,7 @@
 
     // Utility Functions
     function PopulateCustomEmojiArray() {
+        // Update this with new Emotes
         customEmojiList.push(new CustomEmojiObject("https://cdn.betterttv.net/emote/56cb56f5500cb4cf51e25b90/1x", "nymnCorn"));
         customEmojiList.push(new CustomEmojiObject("https://cdn.betterttv.net/emote/5a6edb51f730010d194bdd46/1x", "peepoDance"));
         customEmojiList.push(new CustomEmojiObject("https://cdn.betterttv.net/emote/5a16ddca8c22a247ead62ceb/1x", "peepoSad"));
@@ -93,8 +101,10 @@
         // Total Extra = 12
     }
 
+
     function AddCustomEmoji() {
         customEmojiList.forEach(emoji => {
+            // Creates Element and Decorates it.
             let emojiElement = document.createElement('img');
             emojiElement.style = emoji.style;
             emojiElement.width = 25;
@@ -106,10 +116,15 @@
                 MyBBEditor.insertText(`[img]${emoji.imgSrc}[/img]`)
             }
 
+            // This abomination handles different pages (I really don't know how to make this neater, maybe a switch? Idk)
+            // Currently Supported: New Thread, New Post, Editing a Thread, Editing a Post,
+            // Replying to a PM, Creating a PM [If you find a page not supported, message me please.]
             if (document.title.includes("Post Reply")) {
                 document.getElementsByClassName("trow1")[2].appendChild(emojiElement);
             } else if (document.title.includes("New Thread")) {
                 document.getElementsByClassName("trow1")[4].appendChild(emojiElement);
+            } else if (document.title.includes("Compose a Private Message")) {
+                document.getElementsByClassName("trow1")[31].appendChild(emojiElement);
             } else {
                 let threadOrReply = document.querySelector("#editpost > table > tbody > tr:nth-child(8) > td.trow1.mobile-remove > strong");
                 if (threadOrReply != null) {
@@ -123,10 +138,22 @@
 
     // Main Functions
     function Main() {
-        PopulateEmojiArray();
-        AddEmoji();
-        PopulateCustomEmojiArray();
-        AddCustomEmoji();
+        switch (emojiPack) {
+            case 0:
+                PopulateEmojiArray();
+                PopulateCustomEmojiArray();
+                AddEmoji();
+                AddCustomEmoji();
+                break;
+            case 1:
+                PopulateEmojiArray();
+                AddEmoji();
+                break;
+            case 2:
+                PopulateCustomEmojiArray();
+                AddCustomEmoji();
+                break;
+        }
     }
 
     Main();
