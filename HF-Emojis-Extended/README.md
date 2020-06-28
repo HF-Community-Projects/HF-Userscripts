@@ -24,6 +24,6 @@ You select these packs by Editing line 27. You set the variable to either 0, 1 o
 
 ## Credits 
 Author: <a href="https://hackforums.net/member.php?action=profile&uid=3790579" target="_blank">Joel</a><br>
-<a href="https://hackforums.net/member.php?action=profile&uid=1306528">For pushing me to fix more of my code.</a>
+<a href="https://hackforums.net/member.php?action=profile&uid=1306528">xadamxk for pushing me to fix more of my code.</a>
 <a href="https://emojipedia.org/">EmojiPedia</a><br>
 <a href="https://betterttv.com/">Better Twitch TV</a>
