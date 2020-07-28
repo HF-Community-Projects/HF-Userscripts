@@ -6,6 +6,8 @@ A compilation of HF related userscripts.
 
 - **HF AlwaysQuote**: Allows you to quote posts on closed threads
 - **HF Anti-Caps Lock**: Automatically convert the words in caps lock in thread titles to Title Case
+- **HF Hackúman HP Predictor**: Calculates the price to Heal your Hackúman
+- **HF Emoji Extension**: Extends the Emoji capabilities of Hackforums
 
 
 ## Contributing
